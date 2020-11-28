@@ -138,7 +138,7 @@ public class ridesWindow extends javax.swing.JFrame {
 
         jLabel20.setText("jLabel20");
 
-        jPanel1.setBackground(new java.awt.Color(240, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(240, 244, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
