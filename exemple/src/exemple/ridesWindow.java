@@ -329,6 +329,9 @@ public void verif(int i)
         {
             rideChoice = rides.get(i);
             System.out.println("Name : "+rideChoice.getName());
+            BookingWindow b = new BookingWindow(); 
+            b.setVisible(true);
+            this.hide();
         }
 }
 public void initButton()
