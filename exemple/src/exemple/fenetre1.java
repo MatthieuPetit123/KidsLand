@@ -173,9 +173,21 @@ public class fenetre1 extends javax.swing.JFrame {
         // TODO add your handling code here:
         user = username.getText();
         pass = password.getText();
-        fenetre2 f = new fenetre2(); 
-        f.setVisible(true);
-        this.hide();
+        
+        if(user.equals("employe") && pass.equals("e"))
+        {
+            EmployeeWindow e = new EmployeeWindow(); 
+            e.setVisible(true);
+            this.hide();
+        }
+            
+         if(user.equals("member") && pass.equals("m"))
+         {
+            MemberWindow f = new MemberWindow(); 
+            f.setVisible(true);
+            this.hide();
+         }
+        
         System.out.println("user : "+user);
         System.out.println("password : "+pass);
     }//GEN-LAST:event_jButton1ActionPerformed

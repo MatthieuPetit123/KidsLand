@@ -160,10 +160,17 @@ public class BookingWindow extends javax.swing.JFrame {
         JOptionPane jop1 = new JOptionPane();
         try {
                 places = Integer.parseInt(jTextField1.getText());
+                
             }
             catch (Exception e) {
             jop1.showMessageDialog(null,"You must enter a number","Error", JOptionPane.INFORMATION_MESSAGE);
             }
+        if(places != 0)
+        {
+            EndWindow e = new EndWindow();
+            e.setVisible(true);
+            this.hide();
+        }
         System.out.println("places : "+places);
 
     }//GEN-LAST:event_jButton2ActionPerformed
